@@ -1,0 +1,265 @@
+.app {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; 
+}
+
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 120px;
+  background-image: url('./images/background.png'); /* Replace with the path to your logo image */
+  background-size: cover;
+  z-index: 1; /* Add a higher z-index to bring it above other elements */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+  margin-right: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #ff0000;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: red;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.menu-item {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  background-color: #ff0000;
+  white-space: nowrap;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.menu-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+} 
+
+
+.dropdown-item:hover {
+  background-color: #ff0000;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  position: relative; /* Add position relative */
+  z-index: 1; /* Add a higher z-index to bring it above other elements */
+}
+
+/* GAME INFO*/
+
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.info-text {
+  text-align: center;
+  color: #fff;
+  font-size: 34px;
+  padding: 110px;
+  line-height: 1.2;
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* World of Warcraft */
+
+.background-image-wow {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.info-text-wow {
+  position: relative;
+  z-index: 1;
+  top: 5%;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  padding: 30px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo-classic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.logo-classic img {
+  width: 400px; /* Adjust the width as needed */
+  height: auto;
+}
+
+/* World of Warcraft Burning Crusade */
+
+.background-image-wow-burning {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.info-text-wow-burning {
+  position: relative;
+  z-index: 1;
+  top: 5%;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  padding: 30px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo-burning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.logo-burning img {
+  width: 400px; /* Adjust the width as needed */
+  height: auto;
+}
+
+/* World of Wrcraft Wrath of the Lich King*/
+
+.background-image-wow-wrath {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.info-text-wow-wrath {
+  position: relative;
+  z-index: 1;
+  top: 5%;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  padding: 30px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo-wrath {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.logo-wrath img {
+  width: 400px; /* Adjust the width as needed */
+  height: auto;
+}
